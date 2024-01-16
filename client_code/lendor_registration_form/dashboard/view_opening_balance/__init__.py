@@ -50,7 +50,7 @@ class view_opening_balance(view_opening_balanceTemplate):
 
   def link_6_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.")
+    open_form("lendor_registration_form.dashboard.vcl")
 
   def link_7_click(self, **event_args):
     """This method is called when the link is clicked"""

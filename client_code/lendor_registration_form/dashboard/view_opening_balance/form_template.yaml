@@ -101,10 +101,12 @@ components:
     properties: {text: View Lost Oppurtunities}
     name: link_4
     layout_properties: {grid_position: 'LPKVWH,AIPCEY'}
+    event_bindings: {click: link_4_click}
   - type: Link
     properties: {text: Today's Dues}
     name: link_5
     layout_properties: {grid_position: 'WBTWRL,YZOQFP'}
+    event_bindings: {click: link_5_click}
   - type: Link
     properties: {text: View Closed Loans}
     name: link_6
@@ -114,10 +116,12 @@ components:
     properties: {text: View Loan Extension Requests}
     name: link_7
     layout_properties: {grid_position: 'MUNETU,CPNJWH'}
+    event_bindings: {click: link_7_click}
   - type: Link
     properties: {text: View Loan Foreclosure Requests}
     name: link_8
     layout_properties: {grid_position: 'CTGJHR,KKAVKN'}
+    event_bindings: {click: link_8_click}
   - type: Link
     properties: {text: Request  Top-up Amount}
     name: link_9
@@ -127,15 +131,19 @@ components:
     properties: {text: View/Download Portfolio}
     name: link_10
     layout_properties: {grid_position: 'KXIGQY,ZEQYRV'}
+    event_bindings: {click: link_10_click}
   - type: Link
     properties: {text: View/Edit Profile}
     name: link_11
     layout_properties: {grid_position: 'BUONXT,PRGXZS'}
+    event_bindings: {click: link_11_click}
   - type: Link
     properties: {text: View/Send Notifications}
     name: link_12
     layout_properties: {grid_position: 'EZEKGD,KBJGBG'}
+    event_bindings: {click: link_12_click}
   - type: Link
     properties: {text: Change Password}
     name: link_13
     layout_properties: {grid_position: 'UBAZLK,DREEKQ'}
+    event_bindings: {click: link_13_click}

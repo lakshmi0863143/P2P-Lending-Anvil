@@ -50,6 +50,7 @@ components:
     properties: {text: View Closed Loans}
     name: link_6
     layout_properties: {grid_position: 'XFZFTV,UTXMEO'}
+    event_bindings: {click: link_6_click}
   - type: Link
     properties: {text: View Loan Extension Requests}
     name: link_7
