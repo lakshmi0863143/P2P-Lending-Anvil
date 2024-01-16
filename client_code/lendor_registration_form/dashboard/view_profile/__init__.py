@@ -25,7 +25,7 @@ class view_profile(view_profileTemplate):
    
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.avlbal")
+    open_form('lendor_registration_form.dashboard.view_opening_balance')
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -33,15 +33,15 @@ class view_profile(view_profileTemplate):
 
   def link_2_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.vblr")
+    open_form('lendor_registration_form.dashboard.view_borrower_loan_request')
 
   def link_3_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.opbal")
+    open_form("lendor_registration_form.dashboard.view_opening_balance")
 
   def link_4_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.ld")
+    open_form("lendor_registration_form.dashboard.loa")
 
   def link_5_click(self, **event_args):
     """This method is called when the link is clicked"""
