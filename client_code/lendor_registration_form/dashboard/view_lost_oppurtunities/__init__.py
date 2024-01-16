@@ -1,4 +1,4 @@
-from ._anvil_designer import vlerTemplate
+from ._anvil_designer import view_lost_oppurtunitiesTemplate
 from anvil import *
 import anvil.server
 import anvil.google.auth, anvil.google.drive
@@ -7,11 +7,16 @@ import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
+from .. import lendor_main_form_module as main_form_module
 
-class vler(vlerTemplate):
+
+class view_lost_oppurtunities(view_lost_oppurtunitiesTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
+    self.user_id = main_form_module.userId
+    self.repeating_panel_2.items = app_tables.loan_details.search(loan_updated_status=q.like('lost oppurtunities%'))
+
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
     open_form("lendor_registration_form.dashboard.avlbal")
@@ -34,15 +39,15 @@ class vler(vlerTemplate):
 
   def link_5_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.vlo")
+    open_form("lendor_registration_form.dashboard.td")
 
   def link_6_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.td")
+    open_form("lendor_registration_form.dashboard.vcl")
 
   def link_7_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.vcl")
+    open_form("lendor_registration_form.dashboard.vler")
 
   def link_8_click(self, **event_args):
     """This method is called when the link is clicked"""

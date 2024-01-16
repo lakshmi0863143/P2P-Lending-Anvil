@@ -1,4 +1,4 @@
-from ._anvil_designer import vloTemplate
+from ._anvil_designer import view_or_send_notificationsTemplate
 from anvil import *
 import anvil.server
 import anvil.google.auth, anvil.google.drive
@@ -7,16 +7,11 @@ import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-from .. import lendor_main_form_module as main_form_module
 
-
-class vlo(vloTemplate):
+class view_or_send_notifications(view_or_send_notificationsTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.user_id = main_form_module.userId
-    self.repeating_panel_2.items = app_tables.loan_details.search(loan_updated_status=q.like('lost oppurtunities%'))
-
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
     open_form("lendor_registration_form.dashboard.avlbal")
@@ -39,19 +34,19 @@ class vlo(vloTemplate):
 
   def link_5_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.td")
+    open_form("lendor_registration_form.dashboard.vlo")
 
   def link_6_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.vcl")
+    open_form("lendor_registration_form.dashboard.td")
 
   def link_7_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.vler")
+    open_form("lendor_registration_form.dashboard.vcl")
 
   def link_8_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.vlfr")
+    open_form("lendor_registration_form.dashboard.vler")
 
   def link_9_click(self, **event_args):
     """This method is called when the link is clicked"""
@@ -59,15 +54,15 @@ class vlo(vloTemplate):
 
   def link_10_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.vdp")
+    open_form("lendor_registration_form.dashboard.vlfr")
 
   def link_11_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.vep")
+    open_form("lendor_registration_form.dashboard.vdp")
 
   def link_12_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.vsn")
+    open_form("lendor_registration_form.dashboard.vep")
 
   def link_13_click(self, **event_args):
     """This method is called when the link is clicked"""

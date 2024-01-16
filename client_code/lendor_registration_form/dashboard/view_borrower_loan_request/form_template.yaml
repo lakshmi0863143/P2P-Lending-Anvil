@@ -144,6 +144,6 @@ components:
       layout_properties: {grid_position: 'XBOTVE,CJLLNF'}
       components:
       - type: RepeatingPanel
-        properties: {spacing_above: none, spacing_below: none, item_template: lendor_registration_form.dashboard.vblr.RowTemplate10}
+        properties: {spacing_above: none, spacing_below: none, item_template: lendor_registration_form.dashboard.view_borrower_loan_request.RowTemplate10}
         name: repeating_panel_1
         layout_properties: {}

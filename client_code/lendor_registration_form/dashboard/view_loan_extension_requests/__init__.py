@@ -1,4 +1,4 @@
-from ._anvil_designer import vsnTemplate
+from ._anvil_designer import view_loan_extension_requestsTemplate
 from anvil import *
 import anvil.server
 import anvil.google.auth, anvil.google.drive
@@ -8,7 +8,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
-class vsn(vsnTemplate):
+class view_loan_extension_requests(view_loan_extension_requestsTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
@@ -46,7 +46,7 @@ class vsn(vsnTemplate):
 
   def link_8_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.vler")
+    open_form("lendor_registration_form.dashboard.vlfr")
 
   def link_9_click(self, **event_args):
     """This method is called when the link is clicked"""
@@ -54,15 +54,15 @@ class vsn(vsnTemplate):
 
   def link_10_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.vlfr")
+    open_form("lendor_registration_form.dashboard.vdp")
 
   def link_11_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.vdp")
+    open_form("lendor_registration_form.dashboard.vep")
 
   def link_12_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.vep")
+    open_form("lendor_registration_form.dashboard.vsn")
 
   def link_13_click(self, **event_args):
     """This method is called when the link is clicked"""

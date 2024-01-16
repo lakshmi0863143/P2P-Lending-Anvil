@@ -1,4 +1,4 @@
-from ._anvil_designer import vlfrTemplate
+from ._anvil_designer import view_loan_foreclosure_RequestsTemplate
 from anvil import *
 import anvil.server
 import anvil.google.auth, anvil.google.drive
@@ -8,7 +8,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
-class vlfr(vlfrTemplate):
+class view_loan_foreclosure_Requests(view_loan_foreclosure_RequestsTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)

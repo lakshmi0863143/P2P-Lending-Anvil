@@ -60,7 +60,7 @@ components:
     layout_properties: {grid_position: 'FACUZE,QHILWB'}
     components:
     - type: RepeatingPanel
-      properties: {spacing_above: none, spacing_below: none, item_template: lendor_registration_form.dashboard.vlo.RowTemplate34}
+      properties: {spacing_above: none, spacing_below: none, item_template: lendor_registration_form.dashboard.view_lost_oppurtunities.RowTemplate34}
       name: repeating_panel_2
       layout_properties: {}
 - type: FlowPanel

@@ -11,8 +11,8 @@ from anvil.tables import app_tables
 from anvil import open_form, server
 from anvil import server
 #from anvil import get_current_user
-# from ....bank_users.main_form import main_form_module
-from ...bank_users.main_form import main_form_module
+#from ....bank_users.main_form import main_form_module
+#from ...bank_users.main_form import main_form_module
 
 
 
@@ -21,34 +21,34 @@ class dashboard(dashboardTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
    
-    self.email = main_form_module.email
-    email = self.email
+    #self.email = main_form_module.email
+    #email = self.email
     # Any code you write here will run before the form opens.
 
 
   def button_3_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("lendor_registration_form.dashboard.opbal")
+    open_form("lendor_registration_form.dashboard.view_opening_balance")
 
   def button_4_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("lendor_registration_form.dashboard.avlbal")
+    open_form("lendor_registration_form.dashboard.view_available_balance")
 
   def button_5_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("lendor_registration_form.dashboard.vblr")
+    open_form("lendor_registration_form.dashboard.view_borrower_loan_request")
 
   def button_6_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("lendor_registration_form.dashboard.ld")
+    open_form("lendor_registration_form.dashboard.loan_disbursement")
 
   def outlined_button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("lendor_registration_form.dashboard.td")
+    open_form("lendor_registration_form.dashboard.today_dues")
 
   def outlined_button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("lendor_registration_form.dashboard.vlo")
+    open_form("lendor_registration_form.dashboard.view_lost_oppurtunities")
 
   def outlined_button_3_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -56,31 +56,31 @@ class dashboard(dashboardTemplate):
 
   def outlined_button_4_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("lendor_registration_form.dashboard.vler")
+    open_form("lendor_registration_form.dashboard.view_loan_extension_requests")
 
   def outlined_button_5_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("lendor_registration_form.dashboard.vlfr")
+    open_form("lendor_registration_form.dashboard.view_loan_foreclosure_Requests")
 
   def outlined_button_6_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("lendor_registration_form.dashboard.rta")
+    open_form("lendor_registration_form.dashboard.top_up_amount")
 
   def outlined_button_7_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("lendor_registration_form.dashboard.vdp")
+    open_form("lendor_registration_form.dashboard.view_or_download_portfolio")
 
   def outlined_button_8_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("lendor_registration_form.dashboard.vep")
+    open_form("lendor_registration_form.dashboard.edit_profile")
 
   def outlined_button_9_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("lendor_registration_form.dashboard.vsn")
+    open_form("lendor_registration_form.dashboard.view_or_send_notifications")
 
   def outlined_button_10_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("lendor_registration_form.dashboard.cp")
+    open_form("lendor_registration_form.dashboard.change_password")
 
   def login_signup_button_click(self, **event_args):
     """This method is called when the button is clicked"""

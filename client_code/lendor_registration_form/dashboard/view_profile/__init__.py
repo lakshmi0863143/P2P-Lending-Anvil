@@ -1,4 +1,4 @@
-from ._anvil_designer import vblrTemplate
+from ._anvil_designer import view_profileTemplate
 from anvil import *
 import anvil.server
 import anvil.google.auth, anvil.google.drive
@@ -7,39 +7,25 @@ import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-from .. import lendor_main_form_module as main_form_module
-
-class vblr(vblrTemplate):
+from ....bank_users.main_form import main_form_module
+class view_profile(view_profileTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.user_id=main_form_module.userId
-    
-    self.repeating_panel_1.items=app_tables.loan_details.search(loan_updated_status=q.like('under process%'))
-
-    # self.fetch_loan_data()
-    # loan_details = server.call('fetch_loan_details')
-    # self.repeating_panel_1.items = loan_details
-    # try:
-    #         # Fetch loan details from the server
-    #         loan_details_result = anvil.server.call('fetch_loan_details')
-
-    #         # Convert the SearchIterator to a list for printing
-    #         loan_details_list = list(loan_details_result)
-
-    #         # Print fetched loan details for debugging
-    #         print("Fetched loan details:", loan_details_list)
-
-    #         # Display fetched loan details
-    #         self.repeating_panel_1.items = loan_details_list
-    # except Exception as e:
-    #         # Print any exceptions for debugging
-    #         print("Error in client code:", str(e))
-
-    
+    self.email=main_form_module.email
+    user_profile=app_tables.user_profile.get(email_user=self.email)
+    if user_profile:
+      self.full_name.text=user_profile['full_name']
+      self.email_id.text=user_profile['email_user']
+      self.mobile.text=user_profile['mobile']
+      self.gender.text=user_profile['gender']
+      self.date_of_birth.text=user_profile['date_of_birth']
+      self.ad_number.text=user_profile['aadhaar_no']
+      self.pan_number.text=user_profile['pan_number']
+   
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.opbal")
+    open_form("lendor_registration_form.dashboard.avlbal")
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -47,31 +33,31 @@ class vblr(vblrTemplate):
 
   def link_2_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.avlbal")
+    open_form("lendor_registration_form.dashboard.vblr")
 
   def link_3_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.ld")
+    open_form("lendor_registration_form.dashboard.opbal")
 
   def link_4_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.vlo")
+    open_form("lendor_registration_form.dashboard.ld")
 
   def link_5_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.td")
+    open_form("lendor_registration_form.dashboard.vlo")
 
   def link_6_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.vcl")
+    open_form("lendor_registration_form.dashboard.td")
 
   def link_7_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.vler")
+    open_form("lendor_registration_form.dashboard.vcl")
 
   def link_8_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("lendor_registration_form.dashboard.vlfr")
+    open_form("lendor_registration_form.dashboard.vler")
 
   def link_9_click(self, **event_args):
     """This method is called when the link is clicked"""
@@ -98,3 +84,7 @@ class vblr(vblrTemplate):
 
 
     # Any code you write here will run before the form opens.
+
+  def button_1_copy_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('lendor_registration_form.dashboard.edit_profile')

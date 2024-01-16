@@ -165,7 +165,7 @@ components:
     components:
     - type: RepeatingPanel
       properties: {role: null, tooltip: '', border: '', foreground: '', items: null,
-        visible: true, spacing_above: none, spacing_below: none, item_template: lendor_registration_form.dashboard.vlfr.RowTemplate7,
+        visible: true, spacing_above: none, spacing_below: none, item_template: lendor_registration_form.dashboard.view_loan_foreclosure_Requests.RowTemplate7,
         background: ''}
       name: repeating_panel_1
       layout_properties: {}
@@ -201,7 +201,7 @@ components:
     components:
     - type: RepeatingPanel
       properties: {role: null, tooltip: '', border: '', foreground: '', items: null,
-        visible: true, spacing_above: none, spacing_below: none, item_template: lendor_registration_form.dashboard.vlfr.RowTemplate7,
+        visible: true, spacing_above: none, spacing_below: none, item_template: lendor_registration_form.dashboard.view_loan_foreclosure_Requests.RowTemplate7,
         background: ''}
       name: repeating_panel_2
       layout_properties: {}
@@ -237,7 +237,7 @@ components:
     components:
     - type: RepeatingPanel
       properties: {role: null, tooltip: '', border: '', foreground: '', items: null,
-        visible: true, spacing_above: none, spacing_below: none, item_template: lendor_registration_form.dashboard.vlfr.RowTemplate7,
+        visible: true, spacing_above: none, spacing_below: none, item_template: lendor_registration_form.dashboard.view_loan_foreclosure_Requests.RowTemplate7,
         background: ''}
       name: repeating_panel_3
       layout_properties: {}
@@ -275,7 +275,7 @@ components:
     layout_properties: {grid_position: 'YYBTZH,EKNWYN'}
     components:
     - type: RepeatingPanel
-      properties: {spacing_above: none, spacing_below: none, item_template: lendor_registration_form.dashboard.vlfr.RowTemplate30}
+      properties: {spacing_above: none, spacing_below: none, item_template: lendor_registration_form.dashboard.view_loan_foreclosure_Requests.RowTemplate30}
       name: repeating_panel_4
       layout_properties: {}
   - type: Label
@@ -309,7 +309,7 @@ components:
     components:
     - type: RepeatingPanel
       properties: {role: null, tooltip: '', border: '', foreground: '', items: null,
-        visible: true, spacing_above: none, spacing_below: none, item_template: lendor_registration_form.dashboard.vlfr.RowTemplate32,
+        visible: true, spacing_above: none, spacing_below: none, item_template: lendor_registration_form.dashboard.view_loan_foreclosure_Requests.RowTemplate32,
         background: ''}
       name: repeating_panel
       layout_properties: {}
