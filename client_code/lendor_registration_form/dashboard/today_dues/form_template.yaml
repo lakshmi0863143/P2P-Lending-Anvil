@@ -46,7 +46,7 @@ components:
     layout_properties: {grid_position: 'QPQDVT,CAGBEV'}
     components:
     - name: repeating_panel_1
-      properties: {item_template: lendor_registration_form.dashboard.td.ItemTemplate1}
+      properties: {item_template: lendor_registration_form.dashboard.today_dues.ItemTemplate1}
       type: RepeatingPanel
 - type: FlowPanel
   properties: {}
